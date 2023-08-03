@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align:center;
+    font-size: 41px;
+    margin-top:21px;
+}
+.calculator{
+    width: 22%;
+    height: 66vh;
+    background-color: rgb(35, 35, 35);
+    border: 5px solid black;
+    border-radius: 11px;
+    box-shadow: 1px 1px 10px gray;
+}
+.screen{
+    border: none;
+    width: 100%;
+    padding:  15px 10px;
+    background: rgb(13, 13, 13);
+    color: white;
+    text-align: right;
+    pointer-events: none;
+    cursor: pointer;
+}
+form input{
+    font-size: 25px;
+}
+#result{
+    width: 100%;
+    height: 5vh;
+    background: rgb(13, 13, 13);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 11px;
+    padding:11px;
+}
+button{
+    width:55px;
+    height:55px;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+}
+.btn-orange{
+    background: rgb(246, 202, 121);
+    color: white;
+}
+.equal-btn{
+    background: rgb(246, 202, 121);
+}
+.clear-btn{
+    background: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 97%;
+    margin: 11px 0px;
+    padding-left: 11px;
+    border-radius: 6px;
+}
+.clear-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+/* Responsive code */
+@media(max-width:1300px){
+    .calculator{
+        width: 24%;
+    }
+}   
+@media(max-width:1200px){
+.calculator{
+    width: 28%;
+    height: 69vh;
+}
+}
+@media(max-width:1100px){
+    .calculator{
+        width: 31%;
+        height: 70vh;
+    }
+}
+@media(max-width:1000px){
+    .calculator{
+        width: 35%;
+    }
+}
+@media(max-width:860px){
+    .calculator{
+        width: 40%;
+    }
+}
+@media(max-width:710px){
+    .calculator{
+        width: 49%;
+    }
+}
+@media(max-width:610px){
+    .calculator{
+        width: 58%;
+    }
+}
+@media(max-width:566px){
+    .calculator{
+        width: 61%;
+    }
+}
+@media(max-width:480px){
+    .calculator{
+        width: 73%;
+    }
+}
+@media(max-width:401px){
+    .calculator{
+        width: 85%;
+    }
+}
